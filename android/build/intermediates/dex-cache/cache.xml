@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_b315f7db3b1d3ffc02bfcc2cc5e57ac87f20c7b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_2c2d87b6dfe17dac487842c8422def66592919a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sayantan.sarkar/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_1c520ff3c6265851eb13356ce3103a77c6c9bcd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_d4312cf5684a2d87e365f1ede4cced759faeb86a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="99941aaaf86dc5e525cd9208c2f7c9a624f4f004">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.51.0_95e8ab1ce0172c1058eed20955f6bf5e1122decf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_4b95464a516a09d5d3762a067d62f3d5065bc5c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sayantan.sarkar/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_3af26f088d6653a860ad33902175a78b809d993f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sayantan.sarkar/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_31db5013827b4c96321b2ab0d50f4a8cdbe8f761.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_22d9f6965fe2970f50cc85c0da46e6b362fc2ee7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/DemoCircle/react-native-svg/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="632e85b773a9040700ae74bb67b6c0ba3cdaa0c6">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/DemoCircle-react-native-svg-unspecified_bbe1c18fd9a1ecf9143b2520e56208941658fd30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sayantan.sarkar/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_4b66bacf08f9ef1e147c2aac9d1462f55a70f223.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_d5fb4096ea7adc4c2a479adc640bac72f6ac53cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_7a7424b8aaa6689543466ad7ea068f59bd464bc5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_398c66d77497f1209595cfaf42ddae170c71b142.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_081603976daf0666099e387c60509d5720eb21ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_8103a18ddbd2d979d5c1824f401a32e810917f29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_974a5b904556f21810d38acfbab4e5f49834f5a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_7e81aeb079a9461c5a02f6a0469ae891a2b867fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sayantan.sarkar/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_934694918b009cda5b099fd18258286a59737550.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_98a219d81d19985b5866bf6e5c1be912c602bd3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sayantan.sarkar/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_c195d484d97e448e48203fc68f4281fde2413320.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_0f52529e360cf566622abe838a46b80bcf0a408c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sayantan.sarkar/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_f33b08dcf69c45399f81a978bea8084adb7b36b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_210e10236bd606202e86f146703c81336efdf0d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_c6cf28e174c51cb6b64841dc90e01f2a9d6059c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_1c9743392df16f61890c14b042da7398ae31ea43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/sayantan.sarkar/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_b01abdeaa27e437758d5ba246e87e1d5848fe486.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_169cf97e88b23f887866e9896a9138ea98575c70.jar" />
+    </item>
+
+</items>

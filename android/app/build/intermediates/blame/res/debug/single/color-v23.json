@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/media/sayantan.sarkar/E6B83351B833200B/Sayantan/Live Project/Moments/New from Mainak/Untitled Folder/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/media/mainak/C436EC2E36EC2362/Workspace/DemoCircle/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color-v23/abc_tint_switch_thumb.xml"
+    }
+]
