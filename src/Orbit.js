@@ -27,8 +27,10 @@ let scx,
     radius,
     outerCirclewidth,
     noOfCircle;
-let degreeArray = [30, 180, 90, 360, 270];
-
+let degreeArray = [30];
+let degreeArray2 = [40];
+let mainCount = 0;
+let counter = 0;
 export default class Orbit extends Component<{}> {
 
 
@@ -42,7 +44,10 @@ export default class Orbit extends Component<{}> {
         radius = r.toString();
         noOfCircle = 2;
         outerCirclewidth = r * 2;
+
     }
+
+
 
 
     // constructor(props) {
@@ -81,70 +86,56 @@ export default class Orbit extends Component<{}> {
 
 
         for (i = 1; i <= noOfCircle; i++) {
+            counter++
             if (i == 1) {
+
                 // alert(x+" "+y)
                 dradius = radius.toString()
-                //alert(dradius)
+                // alert(dradius)
                 //
                 orbitArray.push(
                     <View key={i} style={styles.box1}>
-                        {/*{this.plotPoint(scxG, scyG, radius, 200)}*/}
 
-                        {/*<View key={i} style={[styles.symbol,{*/}
-                        {/*top:y,*/}
-                        {/*left:x*/}
-                        {/*}]}>*/}
-                        {/*</View>*/}
-                        <Planets
-                            keyId={i}
-                            cy={scyG}
-                            cx={scxG}
-                            radius={radius}
-                            degree={200}/>
+                        {/*<Planets*/}
+                        {/*keyId={i}*/}
+                        {/*cy={scyG}*/}
+                        {/*cx={scxG}*/}
+                        {/*radius={radius}*/}
+                        {/*degree={degreeArray[0]}/>*/}
 
-
+                        {this.planetGenerator(radius, i, degreeArray2)}
                         <Svg style={{flex: 1}}>
 
 
                             <OrbitGenerater
                                 radius={dradius}
                                 scx={scx}
-                                scy={scy}/>
+                                scy={scy}
+
+                            />
                         </Svg>
                     </View>
                 )
             }
 
             else {
+
                 radius = radius - average
                 dradius = radius.toString()
-                // alert(dradius)
                 orbitArray.push(
                     <View key={i} style={styles.box1}>
 
 
-                        {/*{this.plotPoint(scxG, scyG, radius, 175)}*/}
-
-                        {/*<View key={i} style={[styles.symbol, {*/}
-                        {/*top: y,*/}
-                        {/*left: x*/}
-                        {/*}]}>*/}
-                        {/*</View>*/}
-
-                        {/*{this.planetGenerator(radius,i)}*/}
+                        {this.planetGenerator(radius, i, degreeArray)}
 
                         {/*<Planets*/}
+                        {/*count={1}*/}
+                        {/*keyId={i}*/}
                         {/*cy={scyG}*/}
                         {/*cx={scxG}*/}
                         {/*radius={radius}*/}
-                        {/*degree={175}/>*/}
+                        {/*degree={90}/>*/}
 
-                        <Planets
-                            keyId={i}
-                            cy={scyG}
-                            cx={scxG}
-                            radius={radius}
-                            degree={100}/>
                         <Svg style={{flex: 1}}>
 
 
@@ -172,59 +163,26 @@ export default class Orbit extends Component<{}> {
         y = cy + r * Math.sin(degToRad(degree)) - 10
     }
 
-    planetGenerator(radius, i) {
+
+    planetGenerator(radius, i, deg) {
         let planetArray = [];
 
         //
-        // for (i=0;i<degreeArray.length;i++){
+        for (let j = 0; j < deg.length; j++) {
+            counter++
+            planetArray.push(
+                <Planets
+                    totOrbitCount={noOfCircle}
+                    orbitId={i}
+                    keyId={j}
+                    cy={scyG}
+                    cx={scxG}
+                    radius={radius}
+                    degree={deg[j]}/>
+            )
+        }
 
-        planetArray.push(
-            <Planets
-                keyId={i}
-                cy={scyG}
-                cx={scxG}
-                radius={radius}
-                degree={90}/>
-        )
-
-
-        planetArray.push(
-            <Planets
-                keyId={i}
-                cy={scyG}
-                cx={scxG}
-                radius={radius}
-                degree={150}/>
-        )
-
-
-        planetArray.push(
-            <Planets
-                keyId={i}
-                cy={scyG}
-                cx={scxG}
-                radius={radius}
-                degree={180}/>
-        )
-
-
-        planetArray.push(
-            <Planets
-                keyId={i}
-                cy={scyG}
-                cx={scxG}
-                radius={radius}
-                degree={135}/>
-        )
-
-        // }
-
-
-        return (
-
-            planetArray
-
-        );
+        return (planetArray);
     }
 }
 
