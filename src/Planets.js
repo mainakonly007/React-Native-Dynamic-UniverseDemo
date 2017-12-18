@@ -32,7 +32,6 @@ export default class Planets extends Component<{}> {
     componentDidMount() {
         deg = this.props.degree;
         keyId = this.props.keyId;
-        orbitNumber = this.props.orbitId;
         cx = this.props.cx;
         cy = this.props.cy;
         radi = this.props.radius;
@@ -45,9 +44,9 @@ export default class Planets extends Component<{}> {
             "rad": radi,
             "deg": deg,
             "key": keyId,
-            "orbit": orbitNumber
         };
         planetArray.push(planetObj)
+        console.log(planetArray,"inside planet.js")
         this.plotPoint();
     };
 
@@ -73,18 +72,16 @@ export default class Planets extends Component<{}> {
         xPointerArray.push(newX)
         yPointerArray.push(newY)
         this.setState({x: newX, y: newY});
-        if (counter + circleCount === 4) {
-            this.spinPoint()
-        }
+        this.spinPoint()
 
     }
 
 
     spinPoint() {
-        intervalArr = [20, 10]
+        intervalArr = [20, 10, 50, 70]
         for (let k = 0; k < planetArray.length; k++) {
             this.state.plArr.push(planetArray[k])
-            setInterval(this.newPlotPoint.bind(this, k), k)
+            setInterval(this.newPlotPoint.bind(this, k), intervalArr[k])
         }
 
     }

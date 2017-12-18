@@ -15,9 +15,9 @@ import Planets from "./Planets";
 
 const {width, height} = Dimensions.get("window");
 
-let x;
-let y;
-let scx,
+let x,
+    y,
+    scx,
     scy,
     scxG,
     scyG,
@@ -26,12 +26,19 @@ let scx,
     average,
     radius,
     outerCirclewidth,
-    noOfCircle;
-    degreeArray = [30];
-    degreeArray2 = [40];
-    mainCount = 0;
-    counter = 0;
-    orbitArray = [];
+    noOfCircle,
+    degreeArray = [360, 180, 70, 90,265,40], //for outer circle only
+    orbitNumberArray = [1, 1, 3, 2,3,2], // planet plot on user defined orbit Array
+    noOfPlanets = 6,
+    mainCount = 0,
+    count = 0,
+    planetObj = {},
+    orbitArray = [],
+    radiusMappedArray = [],
+    radiusArray = [],
+
+    planetArray = [];
+
 export default class Orbit extends Component<{}> {
 
 
@@ -43,7 +50,8 @@ export default class Orbit extends Component<{}> {
         scy = scyG.toString();
         r = scxG;
         radius = r.toString();
-        noOfCircle = 2;
+        noOfCircle = 3;
+        average = r / noOfCircle;
         outerCirclewidth = r * 2;
 
     }
@@ -56,53 +64,57 @@ export default class Orbit extends Component<{}> {
     render() {
         return (
             <View style={styles.container}>
+
                 <View style={styles.svgStyle}>
                     {this.generateOrbitPath(r, noOfCircle)}
+                    {this.generatePlanets(radiusArray, degreeArray)}
                 </View>
+
+
             </View>
 
         );
     }
 
     generateOrbitPath(radius, noOfCircle) {
-        average = r / noOfCircle;
 
-        for (i = 1; i <= noOfCircle; i++) {
-            counter++
-            if (i == 1) {
-                dradius = radius.toString()
-                orbitArray.push(
-                    <View key={i} style={styles.box1}>
-                        {this.planetGenerator(radius, i, degreeArray2)}
-                        <Svg style={{flex: 1}}>
-                            <OrbitGenerater
-                                radius={dradius}
-                                scx={scx}
-                                scy={scy}/>
-                        </Svg>
-                    </View>
-                )
-            }
 
-            else {
+        dradius = radius.toString()
+        orbitArray.push(
+            <View key={0} style={styles.box1}>
+                {/*{this.planetGenerator(radius, i, degreeArray)}*/}
+                <Svg style={{flex: 1}}>
+                    <OrbitGenerater
+                        radius={dradius}
+                        scx={scx}
+                        scy={scy}/>
+                </Svg>
+            </View>
+        )
+        radiusArray.push(radius)
+        count++
+        for (let i = 1; i < noOfCircle; i++) {
 
-                radius = radius - average
-                dradius = radius.toString()
-                orbitArray.push(
-                    <View key={i} style={styles.box1}>
-                        {this.planetGenerator(radius, i, degreeArray)}
-                        <Svg style={{flex: 1}}>
-                            <OrbitGenerater
-                                radius={dradius}
-                                scx={scx}
-                                scy={scy}
-                            />
-                        </Svg>
-                    </View>
-                )
+            radius = radius - average
+            dradius = radius.toString()
+            radiusArray.push(radius)
+            orbitArray.push(
+                <View key={i} style={styles.box1}>
+                    {/*{this.planetGenerator(radius, i, degreeArray)}*/}
+                    <Svg style={{flex: 1}}>
+                        <OrbitGenerater
+                            radius={dradius}
+                            scx={scx}
+                            scy={scy}
+                        />
+                    </Svg>
+                </View>
+            )
+            count++
 
-            }
         }
+        console.log("radiusArray", radiusArray)
+
 
         return (orbitArray)
     }
@@ -113,24 +125,79 @@ export default class Orbit extends Component<{}> {
     }
 
 
-    planetGenerator(radius, i, deg) {
-        let planetArray = [];
+    planetGenerator(planetobjArr) {
 
-        for (let j = 0; j < deg.length; j++) {
-            counter++
+
+        for (let j = 0; j < planetobjArr.length; j++) {
             planetArray.push(
                 <Planets
                     totOrbitCount={noOfCircle}
-                    orbitId={i}
-                    keyId={j}
+                    keyId={planetobjArr[j].pid}
                     cy={scyG}
                     cx={scxG}
-                    radius={radius}
-                    degree={deg[j]}/>
+                    radius={planetobjArr[j].rad}
+                    degree={planetobjArr[j].deg}/>
             )
         }
 
         return (planetArray);
+    }
+
+    generatePlanets(radiusArray, degreeArray) {
+
+        // radiusMappedArray
+        let locArr = []
+
+        for (let m = 0; m < orbitNumberArray.length; m++) {
+            radiusMappedArray[m] = radiusArray[orbitNumberArray[m] - 1];
+            console.log("radArr", radiusMappedArray)
+        }
+
+        let orbitDeg = 0
+        if (count == noOfCircle) {
+
+            if (noOfPlanets == orbitNumberArray.length && noOfPlanets == degreeArray.length) {
+
+                for (let i = 0; i < noOfPlanets; i++) {
+                    planetObj = {
+                        "pid": "p" + i,
+                        "rad": radiusMappedArray[i],
+                        "deg": degreeArray[i],
+                    };
+                    locArr.push(planetObj)
+
+
+                    console.log("planetArray ", locArr)
+
+
+                }
+                return this.planetGenerator(locArr)
+            }
+            else {
+
+                alert('planet number and orbit number doesn\'t match')
+            }
+
+        }
+
+
+        // console.log("radiusArray",radiusArray, "degreeArray",degreeArray);
+        // for (let k = 0; k < noOfCircle; k++) {
+        //
+        //     for (let j = 0; j < degreeArray.length; j++) {
+        //         planetArray.push(
+        //             <Planets
+        //                 totOrbitCount={noOfCircle}
+        //                 orbitId={k}
+        //                 keyId={j}
+        //                 cy={scyG}
+        //                 cx={scxG}
+        //                 radius={radiusArray[k]}
+        //                 degree={degreeArray[j]}/>
+        //         )
+        //     }
+        // }
+        // return (planetArray);
     }
 }
 
