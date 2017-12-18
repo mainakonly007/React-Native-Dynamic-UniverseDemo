@@ -1,12 +1,7 @@
 import React, {Component} from 'react';
-import {
-    Dimensions,
-    StyleSheet,
-    View
-} from 'react-native';
-import Svg, {
-    Circle,
-} from 'react-native-svg';
+import {Dimensions} from 'react-native';
+import {Circle,} from 'react-native-svg';
+
 const { width, height } = Dimensions.get("window");
 let count;
 
