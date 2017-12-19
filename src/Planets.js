@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {StyleSheet, View} from 'react-native';
 import PlanetGenerator from "./PlanetGenerator";
 
 
@@ -34,6 +35,7 @@ export default class Planets extends Component<{}> {
         radi = this.props.radius;
         circleCount = this.props.totOrbitCount;
 
+        console.log("mainC", circleCount)
         let planetObj = {
             "cx": cx,
             "cy": cy,
@@ -41,7 +43,7 @@ export default class Planets extends Component<{}> {
             "deg": deg,
             "key": keyId,
         };
-        planetArray.push(planetObj)
+        planetArray.push(planetObj)//creating planet array contains x,y value
         this.plotPoint();
     };
 
@@ -60,12 +62,12 @@ export default class Planets extends Component<{}> {
     }
 
     plotPoint() {
-        counter++;
-        let newX = cx + radi * Math.cos(this.degToRad(deg)) - 10;
-        let newY = cy + radi * Math.sin(this.degToRad(deg)) - 10;
+        counter++
+        var newX = cx + radi * Math.cos(this.degToRad(deg)) - 10;
+        var newY = cy + radi * Math.sin(this.degToRad(deg)) - 10;
 
-        xPointerArray.push(newX);
-        yPointerArray.push(newY);
+        xPointerArray.push(newX)
+        yPointerArray.push(newY)
         this.setState({x: newX, y: newY});
         this.spinPoint()
 
@@ -73,9 +75,9 @@ export default class Planets extends Component<{}> {
 
 
     spinPoint() {
-        intervalArr = [20, 10, 50, 5, 15, 90]
+
         for (let k = 0; k < planetArray.length; k++) {
-            this.state.plArr.push(planetArray[k]);
+            this.state.plArr.push(planetArray[k])
             setInterval(this.newPlotPoint.bind(this, k), intervalArr[k])
         }
 
@@ -104,9 +106,11 @@ export default class Planets extends Component<{}> {
         };
 
         this.state.plArr[i] = newPlanetObj;
-        let arr = this.state.plArr;
-        this.setState({plArr: arr});
+        let arr = this.state.plArr
+        console.log("arr", arr)
+        this.setState({plArr: arr})
         this.setState({x: newX, y: newY})
+        console.log("this.state.plArr", this.state.plArr)
 
     }
 
@@ -115,3 +119,12 @@ export default class Planets extends Component<{}> {
     }
 }
 
+const styles = StyleSheet.create({
+    symbol: {
+        height: 20,
+        width: 20,
+        backgroundColor: 'black',
+        borderRadius: 10,
+        position: 'absolute',
+    }
+});

@@ -1,58 +1,70 @@
 import React, {Component} from 'react';
-import {Dimensions, StyleSheet, View} from 'react-native';
+import {
+    Dimensions,
+    StyleSheet,
+    View,
+    Text
+} from 'react-native';
 import OrbitGenerater from "./OrbitGenerater";
 
 
-import Svg from 'react-native-svg';
+import Svg, {
+    Circle, G
+} from 'react-native-svg';
 import Planets from "./Planets";
 
 const {width, height} = Dimensions.get("window");
 
-let scx,
-    scy,
-    scxG,
-    scyG,
-    r,
-    dradius,
-    average,
+let
+    screenCenterX,
+    screenCenterY,
+    screenCenterXStr,
+    screenCenterYStr,
     radius,
-    outerCirclewidth,
-    noOfCircle,
-    degreeArray = [360, 180, 70, 90, 265, 40], //for outer circle only
-    orbitNumberArray = [1, 1, 3, 2, 3, 2], // planet plot on user defined orbit Array
-    noOfPlanets = 6,
-    count = 0,
+    radiusStr,
+    radiusDivOfCircles,
+    noOfOrbits,
+    noOfPlanets = 8,
+    orbitCount = 0,
     planetObj = {},
-    orbitArray = [],
-    radiusMappedArray = [],
-    radiusArray = [],
-
-    planetArray = [];
-
+    degreeOfPlanets = [360, 180, 90, 60, 40, 130, 60, 80],
+    orbitNumbers = [1, 3, 3, 3, 2, 2, 2, 2],
+    orbits = [],
+    radiusOfPlanetPlot = [],
+    orbitradius = [],
+    planetsContent = [];
+intervalArr = [20, 10, 20, 5, 10, 15, 60, 75];
 export default class Orbit extends Component<{}> {
 
 
     componentWillMount() {
 
-        scxG = width / 2;
-        scx = scxG.toString();
-        scyG = height / 2;
-        scy = scyG.toString();
-        r = scxG;
-        radius = r.toString();
-        noOfCircle = 3;
-        average = r / noOfCircle;
-        outerCirclewidth = r * 2;
+        screenCenterXStr = width / 2;
+        /* Mid screen width*/
+        screenCenterX = screenCenterXStr.toString();
+        /* Mid screen width to string as library takes string as parameter*/
+        screenCenterYStr = height / 2;
+        /* Mid screen height*/
+        screenCenterY = screenCenterYStr.toString();
+        /* Mid screen height to string as library takes string as parameter*/
+        radius = screenCenterXStr;
+        /* radiusStr same with mid screen width*/
+        radiusStr = radius.toString();
+        /*radius converted to string as library takes string as parameter*/
+        noOfOrbits = 3;
+        /*no of orbits*/
+        radiusDivOfCircles = radius / noOfOrbits;
 
     }
+
 
     render() {
         return (
             <View style={styles.container}>
 
                 <View style={styles.svgStyle}>
-                    {this.generateOrbitPath(r, noOfCircle)}
-                    {this.generatePlanets(radiusArray, degreeArray)}
+                    {this.generateOrbitPath(radius, noOfOrbits)}{/*Method for orbit generation*/}
+                    {this.generatePlanets(orbitradius, degreeOfPlanets)}{/*Method for Planet generation*/}
                 </View>
 
 
@@ -61,87 +73,83 @@ export default class Orbit extends Component<{}> {
         );
     }
 
-    generateOrbitPath(radius, noOfCircle) {
-
-
-        dradius = radius.toString()
-        orbitArray.push(
+    generateOrbitPath(radius, noOfOrbits) {
+        radiusStr = radius.toString()
+        orbits.push(//Outer Orbit View
             <View key={0} style={styles.box1}>
                 <Svg style={{flex: 1}}>
                     <OrbitGenerater
-                        radius={dradius}
-                        scx={scx}
-                        scy={scy}/>
+                        radius={radiusStr}
+                        screenCenterX={screenCenterX}
+                        screenCenterY={screenCenterY}/>
                 </Svg>
             </View>
-        );
-        radiusArray.push(radius)
-        count++;
-        for (let i = 1; i < noOfCircle; i++) {
-
-            radius = radius - average
-            dradius = radius.toString()
-            radiusArray.push(radius)
-            orbitArray.push(
+        )
+        orbitradius.push(radius)
+        orbitCount++
+        for (let i = 1; i < noOfOrbits; i++) {//getting RadiusArray for orbits
+            radius = radius - radiusDivOfCircles
+            radiusStr = radius.toString()
+            orbitradius.push(radius)
+            orbits.push( //Inner Orbit Views
                 <View key={i} style={styles.box1}>
                     <Svg style={{flex: 1}}>
                         <OrbitGenerater
-                            radius={dradius}
-                            scx={scx}
-                            scy={scy}
+                            radius={radiusStr}
+                            screenCenterX={screenCenterX}
+                            screenCenterY={screenCenterY}
                         />
                     </Svg>
                 </View>
             )
-            count++
+            orbitCount++
 
         }
 
 
-        return (orbitArray)
+        return (orbits)
     }
+
 
     planetGenerator(planetobjArr) {
 
 
         for (let j = 0; j < planetobjArr.length; j++) {
-            planetArray.push(
+            planetsContent.push(
                 <Planets
-                    totOrbitCount={noOfCircle}
+                    totOrbitCount={noOfOrbits}
                     keyId={planetobjArr[j].pid}
-                    cy={scyG}
-                    cx={scxG}
+                    cy={screenCenterYStr}
+                    cx={screenCenterXStr}
                     radius={planetobjArr[j].rad}
                     degree={planetobjArr[j].deg}/>
             )
         }
 
-        return (planetArray);
+        return (planetsContent);
     }
 
-    generatePlanets(radiusArray, degreeArray) {
+    generatePlanets(orbitradius, degreeOfPlanets) {
 
-        // radiusMappedArray
-        let locArr = [];
+        // radiusOfPlanetPlot
+        let locArr = []
 
-        for (let m = 0; m < orbitNumberArray.length; m++) {
-            radiusMappedArray[m] = radiusArray[orbitNumberArray[m] - 1];
+        for (let m = 0; m < orbitNumbers.length; m++) {
+            radiusOfPlanetPlot[m] = orbitradius[orbitNumbers[m] - 1];//radius and degree mapped array creation
+            console.log("radArr", radiusOfPlanetPlot)
         }
-        if (count === noOfCircle) {
 
-            if (noOfPlanets === orbitNumberArray.length && noOfPlanets === degreeArray.length) {
+        if (orbitCount == noOfOrbits) { //orbit creation finished
 
-                for (let i = 0; i < noOfPlanets; i++) {
+            if (noOfPlanets == orbitNumbers.length && noOfPlanets == degreeOfPlanets.length) {
+
+                for (let i = 0; i < noOfPlanets; i++) {//Planet Array creation
                     planetObj = {
                         "pid": "p" + i,
-                        "rad": radiusMappedArray[i],
-                        "deg": degreeArray[i],
+                        "rad": radiusOfPlanetPlot[i],
+                        "deg": degreeOfPlanets[i],
                     };
                     locArr.push(planetObj)
-
-
-
-
                 }
                 return this.planetGenerator(locArr)
             }
@@ -152,12 +160,10 @@ export default class Orbit extends Component<{}> {
 
         }
 
+
     }
 }
 
-function degToRad(deg) {
-    return deg * Math.PI / 180;
-}
 
 const styles = StyleSheet.create({
     container: {
